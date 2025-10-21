@@ -1,12 +1,60 @@
 section:
   name: Leadership
-  id: skills
+  id: leadership
   enable: true
   weight: 2
   showOnNavbar: true
 
 skills:
-  - name: Team Building
-    #logo: /images/sections/skills/kubernetes.png
-    summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-    #url: "https://kubernetes.io/"
+  - name: Build Elite Teams
+    summary: |
+      - Find talent
+      - Create an environment for talented engineers to thrive
+      - Win - elite teams need to win
+
+  - name: Tactics
+    summary: |
+      - Prioritization
+      - Delivery management
+      - Metrics and accountability
+
+  - name: Technical Strategy & Architecture Vision
+    summary: | 
+      - Defining how systems should evolve
+      - Developing EMs, TLs, and senior ICs to reduce single points of failure and increase organizational resilience
+      - Competitive differentiation through technology
+
+  - name: Technical Vision
+    summary: Deep understanding of system architecture, scalability tradeoffs, and how tech decisions affect long-term business goals
+
+  - name: Talent Development
+    summary: |
+      - Identifying high-potential engineers
+      - Mentoring and training 
+      - Fostering a growth-oriented culture
+
+  - name: Executive communication
+    summary: Conveying complex technical concepts clearly to non-technical stakeholders (e.g., CEOs, CFOs, COOs, or board members)
+
+  - name: Cross-functional alignment
+    summary: Partnering effectively with Product, Design, and Operations to deliver outcomes rather than outputs
+
+  - name: Conflict resolution
+    summary: Managing disagreements constructively—balancing differing priorities and personalities
+
+  - name: Risk management
+    summary: Anticipating technical debt, compliance risks, and capacity issues before they escalate
+
+  - name: Process improvement
+    summary: Implementing and evolving engineering processes (agile, CI/CD, incident management, QA) to improve delivery speed and quality
+
+  - name: Integrity and accountability
+    summary: Modeling transparency, ownership, and humility—especially when things go wrong
+
+  - name: Authentic Leadership
+    summary: |
+      - Self awareness
+      - Lead from principles, not ego
+      - Open communication
+      - Own mistakes publicly
+      - Intuitive empathy

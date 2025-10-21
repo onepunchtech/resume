@@ -1,0 +1,67 @@
+<div class="col-10 col-lg-8">
+    <div class="experience-entry-heading">
+        {{ $logoImage:= resources.Get .company.logo}}
+        {{ $darkLogoImage:= resources.Get .company.darkLogo}}
+        {{ if $logoImage }}
+        <div class="logo-holder"> 
+            <img class="company-logo light-logo" src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+            {{ if $darkLogoImage }}
+            <img class="company-logo dark-logo" src="{{ $darkLogoImage.RelPermalink }}" alt="{{ .name }}" />
+            {{ end }}
+        </div>
+        {{ end }}
+        <div class="company-heading">
+      <h5>{{ if .company.url }}<a href="{{ .company.url }}" title="{{ .company.name }}" target="_blank" rel="noopener">{{ .company.name }}</a>{{ else }}{{ .company.name }}{{ end }}</h5>
+          {{ if .company.acquiredBy }} 
+          <p class="text-muted"> Acquired by {{ .company.acquiredBy }} </p>
+          {{ end }}
+        </div>
+        <!-- Add company overview -->
+        <p>{{ .company.overview | markdownify }}</p>
+    </div>
+    <!-- Add the positions information -->
+  
+    {{ range $index, $case := .company.cases }}
+
+        {{ if gt $index 0 }}
+        <div style="margin-top:2rem;">
+          <hr></hr>
+        </div>
+        {{ end }}
+
+      <div style="margin-top: 2em;" class="positions">
+          <div class="company-heading">
+              <h5 class="designation">Problem</h5>
+          </div>
+          <p>{{ $case.problem | markdownify }}</p>
+      </div>
+
+      <div class="positions">
+          <div class="company-heading">
+              <h5 class="designation">Solution</h5>
+          </div>
+          <div>{{ $case.solution.summary | markdownify }}</div>
+          <div style="margin-left: 2em; margin-top: 1em;">
+            {{ range $item := $case.solution.items }}
+              <ul class="justify-content-around">
+                  <li>{{ . }}</li>
+              </ul>
+            {{ end }}
+          </div>
+      </div>
+
+      <div class="positions">
+          <div class="company-heading">
+              <h5 class="designation">Value Delivered</h5>
+          </div>
+          <div style="margin-left: 2em; margin-top: 1em;">
+            {{ range $item := $case.value }}
+              <ul class="justify-content-around">
+                  <li>{{ . }}</li>
+              </ul>
+            {{ end }}
+          </div>
+      </div>
+    {{ end }}
+
+</div>

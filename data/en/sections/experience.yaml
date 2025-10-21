@@ -9,54 +9,207 @@ section:
 
 experiences:
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
-    logo: /images/experiences/company.png
-    darkLogo: /images/experiences/company-dark.png #(optional), Can optionally show a different logo for dark theme
+    name: Digital Certificates and Managed PKI
+    url: '#'
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
-  positions:
-  - designation: Senior Software Engineer
-    #start: Nov 2019
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
+    cases:
+      - problem: Company needed to build a modern highly scalable public key infrastructure platform that could meet SLAs and compliance from security, contractual, and CA/B forum perspectives.
 
-  - designation: Junior Software Engineer
-    #start: Nov 2017
-    #end: Oct 2019
-    responsibilities:
-    - Implement and test xyz feature for abc tool.
-    - Support client for abc tool.
-    - Learn k,d,w technology for xyz.
+        solution: 
+          summary: Architect and engineer a new PKI platform that innovates on industry standards
+          items:
+            - Improve scalability to market to higher paying customers
+            - Simplify architecture to reduce engineering overhead
+            - Ensure correctness of software before production
+            - Build systems for operations and devops to quickly diagnose problems, and plan for capacity expansion
+            - Ensure compliance is tested for and adhered to during development, and adherence to compliance is proven in logs
+
+        value:
+          - 200M+ certs per year
+          - CA/B compliant, with ACME protocol support
+          - Automated 90% of audit/compliance overhead
+          - Created new market offerings enabling extreme ARR growth and remove 800k/year in platform expenses
+          - Ability to test end to end and deploy completed features within minutes
+
+      - problem: Company has a PKI platform with code from 20+ years old. While it does not meet modern engineering standards it is their primary source of revenue and must continue to function and update code for security and compliance.
+        solution: 
+          summary: Stabilized old PKI platform to enable new minor features, bug fixes, security fixes and compliance updates.
+          items:
+            - Containerize and implement zero downtime deployments
+            - Architect shared testing platform for development and QA teams to remove miscommunication and organizational issues.
+            - Adopted modern security practices
+        value:
+          - Migrated ~20 apps/services/repositories to modern development practices
+          - Improved performance 10x
+          - Reduced time from feature completion to production
+          - Completely eliminated dev time searching for problems related to deploying new code
+          - Reduced deployment related incidents by 100% in some code bases and 95% in the rest
+
+
 - company:
-    name: Example Co.
-    url: "https://www.example.com"
-    location: Dhaka Branch
-    logo: /images/experiences/company.png
-    darkLogo: /images/experiences/company-dark.png #(optional), Can optionally show a different logo for dark theme
+    name: Investment Bank
     # company overview
-    overview: Example Co. is a widely recognized company for cloud-native development. It builds tools for Kubernetes.
-  positions:
-  - designation: Senior Software Engineer
-    start: Nov 2019
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
-    responsibilities:
-    - Design and develop XYZ tool for ABC task
-    - Design, develop and manage disaster recovery tool [Xtool](https://www.example.com) that backup Kubernetes volumes, databases, and cluster's resource definition.
-    - Lead backend team.
+    url: '#'
+    cases:
+      - problem: A team was struggling with correctness and maintainability of C/C++ libraries and services. They heard about other financial institutions adopting Rust and Haskell to deal with those problems. They needed a jump start to learn Haskell and how to apply it to their industry.
 
-  - designation: Junior Software Engineer
-    start: Nov 2017
-    end: Oct 2019
-    responsibilities:
-    - Implement and test xyz feature for abc tool.
-    - Support client for abc tool.
-    - Learn k,d,w technology for xyz.
+        solution: 
+          summary: Multiday workshop
+          items:
+            - Wrote toy APIs/Services in Haskell
+            - Authenticated to financial APIs, pulled financial data and performed various analysis 100% in haskell
+            - Learned how to use Haskell's Foreign Function Interface to integrate with Rust and C/C++ to leverage existing and or faster open source libraries.
+            - Specific knowledge of how to use Haskell to eliminate certain classes of bugs.
+            - Haskell design patterns such as Monoids, Functors and Monads
+
+        value:
+          - Ability to make informed decisions about Haskell adoption
+          - Knowledge of how to adopt Haskell and make it work alongside existing code
+
+- company:
+    name: OptConnect
+    url: https://optconnect.com/
+    # company overview
+    cases:
+      - problem: OptConnect supplies hundreds of thousands of cellular internet modems to customers that deploy them to remote geographical locations. Contractually required to provide a certain amount of uptime, they must perform an expensive "truck roll" to service remote devices if they cannot be fixed remotely. They needed a solution to improve remote administration and uptime of devices on finicky high latency cellular networks.
+
+        solution: 
+          summary: Implement a site reliability engineering team
+          items:
+            - Teach and mentor team in site reliability engineering practices
+            - Engineer Kubernetes Solution
+            - Teach across the organization how other teams could target Kubernetes
+            - Implement zero downtime deployments
+            - Engineer analytics system to quickly determine firmware issues of devices.
+        value:
+          - Reduced "truck rolls"
+          - Improved customer relations by finding and resolving problems before customer
+          - Modern deployment strategies enable standardization when hiring devops engineers
+          - Uptime of core services 99.99%
+          - Improved success rate of remote flashes in unstable conditions 90%
+
+      - problem: OptConnect was growing so fast their system for flashing devices was not keeping up. The devices came flashed with old firmware from China, and needed to be updated before being shipped to the customers. Flashing tens of devices at the same time would overwhelm the system and flashing over hard-wire is believed to be impossible.
+
+        solution: 
+          summary: Engineered and architected new firmware and flashing system
+          items:
+            - Designed solution to enable hard-wire flashing for network engineer to implement
+            - Rewrote firmware itself to improve wireless flashing success rate
+
+        value:
+          - Fulfillment can keep up with sales, revenue can be counted on time and sales can be paid commissions on time.
+          - Reduced firmware size by 85%
+          - Faster startup time 12x
+          - 100% elimination of failed flashes
+          - Flashing throughput improved 1000%
+
+- company:
+    name: Omnivore
+    url: 'https://www.olo.com/'
+    acquiredBy: Olo
+    cases:
+      - problem: Restaurants are locked into their point of sales devices. Updating menus across chains is expensive, and each point of sales vendor has their unique way of managing menus.
+
+        solution: 
+          summary: Engineer and architected menu syncing system
+          items:
+            - Design interface around POS devices to allow two-way syncing
+            - Engineer solution to perform two-way syncing that automatically handled merge conflicts
+        value:
+          - Simplified menu design for restaurants
+          - Saved restaurants millions in menu management costs
+          - Liberated restaurants from point of sales device tyranny
+
+      - problem:  Point of sales devices do not integrate with all the food delivery services e.g. UberEats, Doordash, Grubhub.
+
+        solution: 
+          summary: Implemented integrations with food delivery services
+          items:
+
+           - Designed and architected interface that captured all food delivery service functionality
+           - Implemented integrations with UberEats, Doordash and grubhub.
+        value:
+          - Restaurants could remove the dozens of phones and tables they used to integrate ad-hoc with delivery services
+          - Improved customer acquisition
+
+- company:
+    name: BigSquid
+    url: https://www.qlik.com/
+    acquiredBy: Qlik
+    cases:
+      - problem: Companies have data but don't know how to leverage it. Data scientists are expensive, and data scientists don't have time or resources to train models with a wide range of hyperparameters. Even when companies do manage to train models it is difficult to deploy them to the field to get live predictions. Additionally, the cost of compute and storage scales exponentially when training multiple models.
+
+        solution: 
+          summary: Automate a data scientist 
+          items:
+            - Engineer a data pipeline to work with common data sources like BI platforms, databases and excel
+            - Engineer data storage to enable fast efficient querying as well as data manipulation
+            - Engineer cheaper method of gathering expensive metrics for massive data sets that do not fit in memory
+            - Encode the expertise of multiple data scientists into a model training engine
+            - Engineer UI to allow user to select data source and run "what if" predictions
+
+        value:
+
+          - Real time updates to the customer as data changed
+          - Infrastructure cost scaled linearly with customer size
+          - Constant compute cost per customer (for most models and metrics) regardless of data size
+          - Analytics and predictions on any dataset
+          - Automatic detection of problems with dataset and suggested improvements to find better data
+
+- company:
+    name: O.C. Tanner 
+    url: https://www.octanner.com/
+    cases:
+      - problem: O.C. Tanner provides a SASS platform for employers to show appreciation to employees. The platform is branded and has many customizations tailor made to a customer. The time to implement the product for a new customer took months and needed many engineering man hours.
+
+        solution: 
+          summary: Architect and Engineer a configuration engine
+          items:
+            - Ensure correctness of configuration
+            - Leverage advanced type theory
+            - Train teams in type theory and Scala
+            - Build integrations from the sass platform to the configuration engine
+
+        value:
+
+          - Replaces error-prone configuration and moved technical vision forward of removing dependence on oracle database
+          - Reduced time to configure a customer from months to days
+          - Removed engineering burden when implementing new customers
+          - Happier customers, happier sales team, happier engineers
+
+- company:
+    name: SoFi
+    url: https://www.sofi.com/
+    cases:
+      - problem: SoFi is a finance giant that got to where it is by automating much of the regulation and processes of lending money. The student loan department they needed to integrate with various government data sources, abide by regulations, and seek new data sources to integrate in order to maintain an edge in the industry.
+
+        solution: 
+          summary: Automatically integrate customer's banking records into the system
+          items:
+            - Design and architect various bank login systems to securely retrieve customer banking data
+            - Leverage type safety to ensure correctness of integrations
+            - Implement e2e property based testing
+        value:
+          - Enabled new product offerings
+          - Reduced compliance overhead
+          - Faster loan approval, and reduced overhead cost related to loan approval
+
+
+- company:
+    name: Mediaforge
+    acquiredBy: Rakuten
+    url: https://www.rakuten.com/
+    cases:
+      - problem: Mediaforge needed internal analytics to help their customers improve ad spend. Customers want to know that their ads are targeting the right audience, and want suggestions on how to improve marketing campaigns.
+
+        solution: 
+          summary: Architect and engineer a new internal tool for sales, marketing, and ad creation teams to utilize. 
+          items:
+            - Collect various internal data sources and integrate into a data warehousing solution
+            - Integrate purpose built query engine into modern UI
+
+        value:
+          - Improved ability for sales and marketing to do their jobs
+          - Reduced maintenance burden by utilizing modern best practices with good documentation
+          - Improved performance of ad-spend queries by 200%
+
