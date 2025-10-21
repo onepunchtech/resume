@@ -1,4 +1,6 @@
 # Copyright Notice
-copyright: © 2025 Copyright.
+#copyright: © 2025 Copyright.
+
+copyright: Copyright &copy; {{ dateFormat "2006" now }} {{ .Site.Params.author }}.
 
 description: Portfolio and personal blog of Michael Whitehead.

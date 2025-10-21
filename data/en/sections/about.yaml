@@ -1,0 +1,46 @@
+section:
+  name: About # Title of section (default: "")
+  id: about # url id/slug of section *Required*
+  enable: true # Boolean to determine if this section is enabled (default: false)
+  weight: 1 # Order to display section in (default: alphabetical followed by weight)
+  showOnNavbar: true # Boolean to determine if a link should be shown for this section on the navbar
+  template: sections/about.html
+
+designation: Owner
+# your company information
+company:
+  name: Onepunch Technologies Inc.
+  #url: "https://www.example.com"
+
+summary: |
+  Michael Whitehead is a highly skilled technical leader with extensive experience designing and developing complex systems across diverse industries, including digital certificates, finance, telecom, and hospitality. Proven track record of driving business value by building scalable, efficient, and secure infrastructure solutions. Expertise includes hiring and building elite teams, modernizing legacy systems, automating the hard stuff, and improving system reliability. 
+
+
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "whitehead1415@gmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/onepunchtech"
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/in/michael-whitehead-057aa052/"
+
+badges:
+- type: soft-skill-indicator
+  name: Leader
+  percentage: 0
+  color: blue
+
+- type: soft-skill-indicator
+  name: Proactive
+  percentage: 0
+  color: blue
+
+- type: soft-skill-indicator
+  name: Capable
+  percentage: 0
+  color: blue

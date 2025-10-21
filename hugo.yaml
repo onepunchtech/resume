@@ -15,6 +15,11 @@ module:
   - source: ./node_modules/katex/dist/fonts
     target: static/fonts
 
+languages:
+  en:
+    languageName: English
+    weight: 1
+
 markup:
   goldmark:
     renderer:
@@ -33,7 +38,8 @@ outputs:
 enableEmoji: true
 
 params:
-  gitRepo: https://github.com/onepunchtech/resume
+  background: "images/Spanish_Fork_Peak_sunset.jpg"
+  backgroundAttribution: "foobar"
 
   features:
     # Enable portfolio section
@@ -47,3 +53,6 @@ params:
   # Configure footer
   footer:
     enable: true
+
+  newsletter:
+    enable: false
