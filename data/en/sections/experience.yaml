@@ -14,6 +14,7 @@ experiences:
     # company overview
     cases:
       - problem: Company needed to build a modern highly scalable public key infrastructure platform that could meet SLAs and compliance from security, contractual, and CA/B forum perspectives.
+        shortName: Scaling
 
         solution: 
           summary: Architect and engineer a new PKI platform that innovates on industry standards
@@ -32,6 +33,7 @@ experiences:
           - Ability to test end to end and deploy completed features within minutes
 
       - problem: Company has a PKI platform with code from 20+ years old. While it does not meet modern engineering standards it is their primary source of revenue and must continue to function and update code for security and compliance.
+        shortName: Keeping the lights on
         solution: 
           summary: Stabilized old PKI platform to enable new minor features, bug fixes, security fixes and compliance updates.
           items:
@@ -52,6 +54,7 @@ experiences:
     url: '#'
     cases:
       - problem: A team was struggling with correctness and maintainability of C/C++ libraries and services. They heard about other financial institutions adopting Rust and Haskell to deal with those problems. They needed a jump start to learn Haskell and how to apply it to their industry.
+        shortName: Slow error prone development
 
         solution: 
           summary: Multiday workshop
@@ -72,6 +75,7 @@ experiences:
     # company overview
     cases:
       - problem: OptConnect supplies hundreds of thousands of cellular internet modems to customers that deploy them to remote geographical locations. Contractually required to provide a certain amount of uptime, they must perform an expensive "truck roll" to service remote devices if they cannot be fixed remotely. They needed a solution to improve remote administration and uptime of devices on finicky high latency cellular networks.
+        shortName: Reliability
 
         solution: 
           summary: Implement a site reliability engineering team
@@ -89,6 +93,7 @@ experiences:
           - Improved success rate of remote flashes in unstable conditions 90%
 
       - problem: OptConnect was growing so fast their system for flashing devices was not keeping up. The devices came flashed with old firmware from China, and needed to be updated before being shipped to the customers. Flashing tens of devices at the same time would overwhelm the system and flashing over hard-wire is believed to be impossible.
+        shortName: Slow delivery
 
         solution: 
           summary: Engineered and architected new firmware and flashing system
@@ -109,6 +114,7 @@ experiences:
     acquiredBy: Olo
     cases:
       - problem: Restaurants are locked into their point of sales devices. Updating menus across chains is expensive, and each point of sales vendor has their unique way of managing menus.
+        shortName: Vendor lock-in
 
         solution: 
           summary: Engineer and architected menu syncing system
@@ -121,6 +127,7 @@ experiences:
           - Liberated restaurants from point of sales device tyranny
 
       - problem:  Point of sales devices do not integrate with all the food delivery services e.g. UberEats, Doordash, Grubhub.
+        shortName: Leaving money on the table
 
         solution: 
           summary: Implemented integrations with food delivery services
@@ -138,6 +145,7 @@ experiences:
     acquiredBy: Qlik
     cases:
       - problem: Companies have data but don't know how to leverage it. Data scientists are expensive, and data scientists don't have time or resources to train models with a wide range of hyperparameters. Even when companies do manage to train models it is difficult to deploy them to the field to get live predictions. Additionally, the cost of compute and storage scales exponentially when training multiple models.
+        shortName: What to do with junk drawer of data?
 
         solution: 
           summary: Automate a data scientist 
@@ -161,6 +169,7 @@ experiences:
     url: https://www.octanner.com/
     cases:
       - problem: O.C. Tanner provides a SASS platform for employers to show appreciation to employees. The platform is branded and has many customizations tailor made to a customer. The time to implement the product for a new customer took months and needed many engineering man hours.
+        shortName: Slow integrations
 
         solution: 
           summary: Architect and Engineer a configuration engine
@@ -182,6 +191,7 @@ experiences:
     url: https://www.sofi.com/
     cases:
       - problem: SoFi is a finance giant that got to where it is by automating much of the regulation and processes of lending money. The student loan department they needed to integrate with various government data sources, abide by regulations, and seek new data sources to integrate in order to maintain an edge in the industry.
+        shortName: Automate loans securely
 
         solution: 
           summary: Automatically integrate customer's banking records into the system
@@ -201,6 +211,7 @@ experiences:
     url: https://www.rakuten.com/
     cases:
       - problem: Mediaforge needed internal analytics to help their customers improve ad spend. Customers want to know that their ads are targeting the right audience, and want suggestions on how to improve marketing campaigns.
+        shortName: Needs immediate insights
 
         solution: 
           summary: Architect and engineer a new internal tool for sales, marketing, and ad creation teams to utilize. 

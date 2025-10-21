@@ -30,14 +30,15 @@
         {{ end }}
 
       <div style="margin-top: 2em;" class="positions">
-          <div class="company-heading">
+          <div style="margin-bottom: .5em;" class="company-heading">
               <h5 class="designation">Problem</h5>
+              <p class="text-muted"> {{ $case.shortName }}</p>
           </div>
           <p>{{ $case.problem | markdownify }}</p>
       </div>
 
       <div class="positions">
-          <div class="company-heading">
+          <div style="margin-bottom: .5em;" class="company-heading">
               <h5 class="designation">Solution</h5>
           </div>
           <div>{{ $case.solution.summary | markdownify }}</div>
