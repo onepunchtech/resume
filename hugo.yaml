@@ -1,0 +1,49 @@
+baseURL: https://michael-whitehead.com/
+languageCode: en-us
+title: Michael Whitehead
+
+module:
+  imports:
+  - path: github.com/hugo-toha/toha/v4
+  mounts:
+  - source: static/files
+    target: static/files
+  - source: ./node_modules/flag-icon-css/flags
+    target: static/flags
+  - source: ./node_modules/@fontsource/mulish/files
+    target: static/files
+  - source: ./node_modules/katex/dist/fonts
+    target: static/fonts
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableEmoji: true
+
+params:
+  gitRepo: https://github.com/onepunchtech/resume
+
+  features:
+    # Enable portfolio section
+    portfolio:
+      enable: true
+
+    # Enable Table of contents in reading page
+    toc:
+      enable: true
+
+  # Configure footer
+  footer:
+    enable: true
