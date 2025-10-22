@@ -13,40 +13,130 @@ experiences:
     url: '#'
     # company overview
     cases:
-      - problem: Company needed to build a modern highly scalable public key infrastructure platform that could meet SLAs and compliance from security, contractual, and CA/B forum perspectives.
-        shortName: Scaling
+      - problem: The company needed to design and deliver a modern, highly scalable Public Key Infrastructure (PKI) platform that could meet aggressive SLAs and stringent CA/B Forum compliance requirements, while supporting enterprise growth.
+        shortName: Scaling Securely
 
         solution: 
-          summary: Architect and engineer a new PKI platform that innovates on industry standards
           items:
-            - Improve scalability to market to higher paying customers
-            - Simplify architecture to reduce engineering overhead
-            - Ensure correctness of software before production
-            - Build systems for operations and devops to quickly diagnose problems, and plan for capacity expansion
-            - Ensure compliance is tested for and adhered to during development, and adherence to compliance is proven in logs
+            - Defined the technical vision and architecture strategy for a next-generation PKI platform aligned with revenue and compliance goals.
+            - Bridged executive strategy with engineering execution through deep technical understanding and pragmatic tradeoff decisions.
+            - Partnered with Operations and Compliance to embed auditability and security directly into development and deployment workflows.
+            - Introduced architectural principles that simplified systems, reduced engineering overhead, and ensured provable correctness before production.
+
 
         value:
-          - 200M+ certs per year
-          - CA/B compliant, with ACME protocol support
-          - Automated 90% of audit/compliance overhead
-          - Created new market offerings enabling extreme ARR growth and remove 800k/year in platform expenses
-          - Ability to test end to end and deploy completed features within minutes
+          - Scaled to 200M+ certificates per year while achieving full CA/B Forum compliance and ACME protocol support.
+          - Automated 90% of audit and compliance overhead, freeing engineering capacity.
+          - Created new enterprise product offerings, unlocking ARR growth and reducing $800K/year in infrastructure costs.
+          - Established a continuous delivery pipeline with minutes-to-production deployments and end-to-end test coverage
 
-      - problem: Company has a PKI platform with code from 20+ years old. While it does not meet modern engineering standards it is their primary source of revenue and must continue to function and update code for security and compliance.
-        shortName: Keeping the lights on
+      - problem: The company’s legacy PKI platform—over 20 years old—remained a critical revenue driver but required modernization to support compliance and security without service disruption.
+        shortName: Sustaining Legacy Revenue Systems
         solution: 
-          summary: Stabilized old PKI platform to enable new minor features, bug fixes, security fixes and compliance updates.
           items:
-            - Containerize and implement zero downtime deployments
-            - Architect shared testing platform for development and QA teams to remove miscommunication and organizational issues.
-            - Adopted modern security practices
-        value:
-          - Migrated ~20 apps/services/repositories to modern development practices
-          - Improved performance 10x
-          - Reduced time from feature completion to production
-          - Completely eliminated dev time searching for problems related to deploying new code
-          - Reduced deployment related incidents by 100% in some code bases and 95% in the rest
+            - Led a cross-functional initiative to stabilize and modernize legacy systems while maintaining business continuity.
+            - Guided teams to containerize 20+ services, introducing zero-downtime deployment pipelines and modern DevOps practices.
+            - Architected a shared testing and QA environment to eliminate miscommunication between engineering and operations.
+            - Championed secure-by-design practices across legacy codebases, improving audit readiness and reducing incident risk.
 
+        value:
+          - 10x performance improvement across legacy services.
+          - 95–100% reduction in deployment-related incidents.
+          - Cut time from feature completion to production from weeks to hours.
+          - Fully migrated ~20 apps and repositories to modern development workflows, enabling sustainable long-term maintenance.
+
+
+
+- company:
+    name: OptConnect
+    url: https://optconnect.com/
+    # company overview
+    cases:
+      - problem: OptConnect provides managed cellular connectivity for hundreds of thousands of remote devices. Contractually bound to deliver high uptime, the company faced escalating operational costs from field service dispatches (“truck rolls”) whenever devices failed in remote regions. A new strategy was needed to improve remote administration, reliability, and observability on high-latency cellular networks.
+        shortName: Ensuring Reliability Across a Distributed Network
+
+        solution: 
+          items:
+            - Established and led a Site Reliability Engineering (SRE) organization, defining its charter, structure, and key reliability metrics.
+            - Aligned infrastructure modernization with uptime SLAs and customer satisfaction goals, partnering directly with executive and operations leadership.
+            - Empowered EMs and TLs with frameworks emphasizing correctness, simplicity, and long-term maintainability.
+            - Instituted architectural reviews and early technical validation to reduce project failure risk and improve delivery predictability.
+            - Guided teams through Kubernetes adoption, zero-downtime deployments, and shared observability practices to standardize reliability across services.
+
+        value:
+          - Increased uptime of core services to 99.99%, drastically reducing costly field visits.
+          - Improved remote firmware update success rate by 90%, lowering churn and operational overhead.
+          - Elevated reliability culture across product and operations teams, improving trust and accountability organization-wide.
+
+
+      - problem: Rapid sales growth exposed limitations in the firmware flashing process. Devices shipped with outdated firmware from manufacturing partners overseas, and attempts to flash multiple devices concurrently caused instability. A redesign was needed to scale throughput and eliminate errors.
+        shortName: Accelerating Fulfillment Through Firmware Innovation
+
+        solution: 
+          items:
+            - Defined and executed the firmware delivery modernization strategy, leading cross-functional engineering and network teams.
+            - Architected and engineered a new firmware flashing system, enabling parallel, reliable updates over both wired and wireless connections—previously believed impossible.
+            - Guided the rewrite of firmware to reduce size, improve reliability, and simplify maintenance.
+
+        value:
+          - Fulfillment throughput improved by 1000%, enabling operations to scale with revenue growth.
+          - Firmware size reduced by 85%, and startup times accelerated 12x.
+          - Achieved 100% elimination of failed flashes, ensuring devices shipped ready for customers and commissions were recognized on time.
+
+- company:
+    name: Omnivore
+    url: 'https://www.olo.com/'
+    acquiredBy: Olo
+    cases:
+      - problem: Restaurant chains were trapped in proprietary point-of-sale (POS) ecosystems, making menu updates across locations time-consuming and costly. Each vendor had unique, incompatible APIs, leading to fragmented data and operational inefficiency.
+        shortName: Breaking Vendor Lock-In
+
+        solution: 
+          items:
+            - Defined the technical vision for a universal POS integration layer that would decouple restaurants from vendor lock-in.
+            - Architected a bi-directional menu synchronization system, designed to handle conflicting data and schema differences across vendors.
+            - Led teams in building resilient APIs and reconciliation mechanisms that automated conflict resolution and maintained data consistency.
+            - Advocated for simplicity and correctness as design principles, enabling teams to build flexible systems that scaled across diverse POS technologies.
+        value:
+          - Empowered restaurants to manage menus centrally across multiple vendors and brands.
+          - Saved millions annually in menu management and configuration costs.
+          - Eliminated dependency on individual POS providers, expanding addressable market and accelerating customer onboarding.
+
+      - problem:  Most POS systems lacked integration with modern delivery platforms like UberEats, DoorDash, and Grubhub—forcing restaurants to manage orders manually via phones and tablets, creating operational chaos and missed revenue opportunities.
+        shortName: Expanding Restaurant Reach
+
+        solution: 
+          items:
+            - Designed and led the development of a unified delivery integration framework connecting multiple third-party platforms through a single API.
+            - Architected service interfaces that normalized disparate delivery workflows and ensured data integrity across providers.
+        value:
+          - Enabled restaurants to retire dozens of ad-hoc devices and unify all delivery orders directly into their POS systems.
+          - Improved order accuracy and delivery turnaround, enhancing customer satisfaction.
+          - Directly contributed to Omnivore’s acquisition by Olo, whose platform expanded nationwide using this integration technology.
+
+- company:
+    name: BigSquid
+    url: https://www.qlik.com/
+    acquiredBy: Qlik
+    cases:
+      - problem: Enterprises had massive datasets but lacked the expertise and infrastructure to transform them into actionable insights. Training predictive models was slow, costly, and computationally intensive—often requiring dedicated data science teams and prohibitive compute resources.
+        shortName: Making Enterprise Data Useful
+
+        solution: 
+          summary: Automate a data scientist 
+          items:
+            - Defined and executed the technical vision to “automate a data scientist” — delivering predictive analytics to non-technical business users.
+            - Instrumental in securing venture funding by articulating the market opportunity, competitive differentiation, and architectural feasibility to investors; directly influenced pitch materials and technical due diligence.
+            - Architected a scalable data pipeline supporting diverse sources such as BI tools, databases, and spreadsheets, enabling self-service analytics.
+            - Engineered data storage and compute layers optimized for both high-speed querying and low-cost scalability.
+            - Encoded data science expertise into an automated model training engine capable of tuning hyperparameters, validating models, and detecting data quality issues.
+
+        value:
+          - Delivered real-time predictive insights as customer data evolved.
+          - Achieved linear infrastructure scaling relative to customer growth, reducing operational cost per client.
+          - Maintained constant compute costs per customer, even for large datasets.
+          - Enabled non-technical users to generate and deploy predictive models autonomously, accelerating decision-making across industries.
+          - Vision and prototype were key catalysts in securing venture funding, establishing the company’s market credibility and fueling growth leading to acquisition by Qlik.
 
 - company:
     name: Investment Bank
@@ -59,150 +149,53 @@ experiences:
         solution: 
           summary: Multiday workshop
           items:
-            - Wrote toy APIs/Services in Haskell
+            - Translate haskell specific engineering tradeoffs into clear business decisions
+            - Wrote APIs/Services in Haskell
             - Authenticated to financial APIs, pulled financial data and performed various analysis 100% in haskell
-            - Learned how to use Haskell's Foreign Function Interface to integrate with Rust and C/C++ to leverage existing and or faster open source libraries.
             - Specific knowledge of how to use Haskell to eliminate certain classes of bugs.
-            - Haskell design patterns such as Monoids, Functors and Monads
+            - Haskell design patterns such as Monoids, Functors and Monads to reduce bugs and speed up development.
 
         value:
           - Ability to make informed decisions about Haskell adoption
           - Knowledge of how to adopt Haskell and make it work alongside existing code
 
 - company:
-    name: OptConnect
-    url: https://optconnect.com/
-    # company overview
-    cases:
-      - problem: OptConnect supplies hundreds of thousands of cellular internet modems to customers that deploy them to remote geographical locations. Contractually required to provide a certain amount of uptime, they must perform an expensive "truck roll" to service remote devices if they cannot be fixed remotely. They needed a solution to improve remote administration and uptime of devices on finicky high latency cellular networks.
-        shortName: Reliability
-
-        solution: 
-          summary: Implement a site reliability engineering team
-          items:
-            - Teach and mentor team in site reliability engineering practices
-            - Engineer Kubernetes Solution
-            - Teach across the organization how other teams could target Kubernetes
-            - Implement zero downtime deployments
-            - Engineer analytics system to quickly determine firmware issues of devices.
-        value:
-          - Reduced "truck rolls"
-          - Improved customer relations by finding and resolving problems before customer
-          - Modern deployment strategies enable standardization when hiring devops engineers
-          - Uptime of core services 99.99%
-          - Improved success rate of remote flashes in unstable conditions 90%
-
-      - problem: OptConnect was growing so fast their system for flashing devices was not keeping up. The devices came flashed with old firmware from China, and needed to be updated before being shipped to the customers. Flashing tens of devices at the same time would overwhelm the system and flashing over hard-wire is believed to be impossible.
-        shortName: Slow delivery
-
-        solution: 
-          summary: Engineered and architected new firmware and flashing system
-          items:
-            - Designed solution to enable hard-wire flashing for network engineer to implement
-            - Rewrote firmware itself to improve wireless flashing success rate
-
-        value:
-          - Fulfillment can keep up with sales, revenue can be counted on time and sales can be paid commissions on time.
-          - Reduced firmware size by 85%
-          - Faster startup time 12x
-          - 100% elimination of failed flashes
-          - Flashing throughput improved 1000%
-
-- company:
-    name: Omnivore
-    url: 'https://www.olo.com/'
-    acquiredBy: Olo
-    cases:
-      - problem: Restaurants are locked into their point of sales devices. Updating menus across chains is expensive, and each point of sales vendor has their unique way of managing menus.
-        shortName: Vendor lock-in
-
-        solution: 
-          summary: Engineer and architected menu syncing system
-          items:
-            - Design interface around POS devices to allow two-way syncing
-            - Engineer solution to perform two-way syncing that automatically handled merge conflicts
-        value:
-          - Simplified menu design for restaurants
-          - Saved restaurants millions in menu management costs
-          - Liberated restaurants from point of sales device tyranny
-
-      - problem:  Point of sales devices do not integrate with all the food delivery services e.g. UberEats, Doordash, Grubhub.
-        shortName: Leaving money on the table
-
-        solution: 
-          summary: Implemented integrations with food delivery services
-          items:
-
-           - Designed and architected interface that captured all food delivery service functionality
-           - Implemented integrations with UberEats, Doordash and grubhub.
-        value:
-          - Restaurants could remove the dozens of phones and tables they used to integrate ad-hoc with delivery services
-          - Improved customer acquisition
-
-- company:
-    name: BigSquid
-    url: https://www.qlik.com/
-    acquiredBy: Qlik
-    cases:
-      - problem: Companies have data but don't know how to leverage it. Data scientists are expensive, and data scientists don't have time or resources to train models with a wide range of hyperparameters. Even when companies do manage to train models it is difficult to deploy them to the field to get live predictions. Additionally, the cost of compute and storage scales exponentially when training multiple models.
-        shortName: What to do with junk drawer of data?
-
-        solution: 
-          summary: Automate a data scientist 
-          items:
-            - Engineer a data pipeline to work with common data sources like BI platforms, databases and excel
-            - Engineer data storage to enable fast efficient querying as well as data manipulation
-            - Engineer cheaper method of gathering expensive metrics for massive data sets that do not fit in memory
-            - Encode the expertise of multiple data scientists into a model training engine
-            - Engineer UI to allow user to select data source and run "what if" predictions
-
-        value:
-
-          - Real time updates to the customer as data changed
-          - Infrastructure cost scaled linearly with customer size
-          - Constant compute cost per customer (for most models and metrics) regardless of data size
-          - Analytics and predictions on any dataset
-          - Automatic detection of problems with dataset and suggested improvements to find better data
-
-- company:
     name: O.C. Tanner 
     url: https://www.octanner.com/
     cases:
-      - problem: O.C. Tanner provides a SASS platform for employers to show appreciation to employees. The platform is branded and has many customizations tailor made to a customer. The time to implement the product for a new customer took months and needed many engineering man hours.
-        shortName: Slow integrations
+      - problem: O.C. Tanner’s recognition platform was highly customized for each enterprise client. Implementing a new customer required months of engineering effort and manual configuration, delaying revenue recognition and creating friction between sales and delivery teams.
+        shortName: Accelerating Customer Onboarding
 
         solution: 
-          summary: Architect and Engineer a configuration engine
           items:
-            - Ensure correctness of configuration
-            - Leverage advanced type theory
-            - Train teams in type theory and Scala
-            - Build integrations from the sass platform to the configuration engine
+            - Defined and led the technical vision for a configuration engine that automated customer setup while preserving full branding flexibility.
+            - Applied advanced type theory and functional programming principles to guarantee correctness and prevent configuration errors at compile-time.
+            - Guided engineering teams through adoption of extreme-programming and advanced language design practices to raise code quality and maintainability.
+            - Partnered with platform teams to decouple the product from legacy Oracle dependencies, paving the way for a modern cloud-native architecture.
 
         value:
-
-          - Replaces error-prone configuration and moved technical vision forward of removing dependence on oracle database
-          - Reduced time to configure a customer from months to days
-          - Removed engineering burden when implementing new customers
-          - Happier customers, happier sales team, happier engineers
+          - Reduced customer implementation time from months to days.
+          - Eliminated configuration-related defects, improving reliability and customer satisfaction.
+          - Freed engineering capacity to focus on feature innovation instead of manual setup.
+          - Advanced the company’s long-term vision toward a modular, database-independent SaaS platform.
 
 - company:
     name: SoFi
     url: https://www.sofi.com/
     cases:
-      - problem: SoFi is a finance giant that got to where it is by automating much of the regulation and processes of lending money. The student loan department they needed to integrate with various government data sources, abide by regulations, and seek new data sources to integrate in order to maintain an edge in the industry.
-        shortName: Automate loans securely
+      - problem: SoFi’s student-loan division needed to integrate with multiple government and banking data sources under strict compliance requirements. Manual data exchange slowed approvals and limited scalability.
+        shortName: Automating Regulated Financial Workflows
 
         solution: 
-          summary: Automatically integrate customer's banking records into the system
           items:
-            - Design and architect various bank login systems to securely retrieve customer banking data
-            - Leverage type safety to ensure correctness of integrations
-            - Implement e2e property based testing
+            - Architected secure, automated integrations with external financial systems and government APIs to streamline loan processing.
+            - Implemented advanced type-safety and property-based testing frameworks to ensure correctness and regulatory compliance.
+            - Partnered with compliance and product teams to translate regulatory constraints into verifiable technical rules.
+            - Advocated for “correct-by-construction” design, embedding reliability into every stage of the development lifecycle.
         value:
-          - Enabled new product offerings
-          - Reduced compliance overhead
-          - Faster loan approval, and reduced overhead cost related to loan approval
+          - Enabled new lending products and faster go-to-market for regulated financial offerings.
+          - Reduced compliance overhead and audit risk through provably correct integrations.
+          - Accelerated loan approvals, cutting manual review time and improving customer experience.
 
 
 - company:
@@ -210,17 +203,18 @@ experiences:
     acquiredBy: Rakuten
     url: https://www.rakuten.com/
     cases:
-      - problem: Mediaforge needed internal analytics to help their customers improve ad spend. Customers want to know that their ads are targeting the right audience, and want suggestions on how to improve marketing campaigns.
-        shortName: Needs immediate insights
+      - problem: Mediaforge needed an internal analytics platform to help clients measure and improve ad-spend effectiveness in real time. Existing tools lacked performance, consistency, and accessibility for sales and marketing teams.
+        shortName: Delivering Immediate Marketing Intelligence
 
         solution: 
-          summary: Architect and engineer a new internal tool for sales, marketing, and ad creation teams to utilize. 
           items:
-            - Collect various internal data sources and integrate into a data warehousing solution
-            - Integrate purpose built query engine into modern UI
+            - Architected and engineered an internal analytics and visualization platform unifying sales, marketing, and ad-creation data.
+            - Integrated disparate data sources into a centralized warehouse and designed a purpose-built query engine optimized for ad-spend analysis.
+            - Led cross-functional collaboration with marketing leadership to define actionable metrics and intuitive UI workflows.
+            - Introduced modern engineering practices and documentation standards, reducing maintenance risk and onboarding time.
 
         value:
-          - Improved ability for sales and marketing to do their jobs
-          - Reduced maintenance burden by utilizing modern best practices with good documentation
-          - Improved performance of ad-spend queries by 200%
-
+          - Improved query performance for ad-spend analytics by 200%, enabling near-real-time insight.
+          - Enhanced sales and marketing productivity through unified, self-service dashboards.
+          - Lowered long-term maintenance costs and increased engineering velocity via standardized, documented systems.
+          - Contributed to Rakuten’s acquisition of Mediaforge, expanding its global advertising analytics portfolio.

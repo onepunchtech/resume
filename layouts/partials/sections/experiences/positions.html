@@ -31,7 +31,7 @@
 
       <div style="margin-top: 2em;" class="positions">
           <div style="margin-bottom: .5em;" class="company-heading">
-              <h5 class="designation">Problem</h5>
+              <h5 class="designation">Challenge</h5>
               <p class="text-muted"> {{ $case.shortName }}</p>
           </div>
           <p>{{ $case.problem | markdownify }}</p>
@@ -39,7 +39,7 @@
 
       <div class="positions">
           <div style="margin-bottom: .5em;" class="company-heading">
-              <h5 class="designation">Solution</h5>
+              <h5 class="designation">Strategy and Leadership </h5>
           </div>
           <div>{{ $case.solution.summary | markdownify }}</div>
           <div style="margin-left: 2em; margin-top: 1em;">
@@ -53,7 +53,7 @@
 
       <div class="positions">
           <div class="company-heading">
-              <h5 class="designation">Value Delivered</h5>
+              <h5 class="designation">Impact</h5>
           </div>
           <div style="margin-left: 2em; margin-top: 1em;">
             {{ range $item := $case.value }}

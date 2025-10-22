@@ -11,6 +11,12 @@
     <h1 class="text-center" style="display: none">
         <span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
   {{ end }}
+
+  <div class="container ms-auto text-center">
+  <div>
+    {{ .philosophy | markdownify }}
+  </div>
+</div>
   {{ if .section.filter }}
   <div class="container ms-auto text-center">
     <div class="btn-group flex-wrap" role="group" id="skill-filter-buttons">
@@ -25,6 +31,7 @@
     <div class="row" id="skill-card-holder" style="margin-left:unset">
   {{ else }}
   <div class="container d-flex-block">
+
     <div class="row" id="primary-skills">
   {{ end }}
       {{ range .skills }}

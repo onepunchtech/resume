@@ -24,7 +24,11 @@
   <div class="container d-flex-block filtr-skills">
     <div class="row" id="skill-card-holder" style="margin-left:unset">
   {{ else }}
+
   <div class="container d-flex-block">
+  <div>
+    {{ .philosophy | markdownify }}
+  </div>
     <div class="row" id="primary-skills">
   {{ end }}
       {{ range .skills }}

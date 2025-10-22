@@ -1,158 +1,23 @@
 section:
-  name: Tech Stack
+  name: Tech Stack Philosophy
   id: skills
   enable: true
   weight: 4
   showOnNavbar: true
   filter: "foobar"
 
-buttons:
-  - name: All
-    filter: all
-  - name: Languages
-    filter: languages
-  - name: ML
-    filter: ml
-  - name: Cloud
-    filter: cloud
-  - name: Devops
-    filter: devops
-  - name: Databases
-    filter: databases
+philosophy: |
+  My goal is to select technologies that balance correctness, scalability, and simplicity — tools that make it easier to prove software does what it’s supposed to do and to maintain that correctness over time.
 
 skills:
-  - name: Machine Learning
-    summary: |
-      - Pandas
-      - Polars
-      - Scikit learn
-      - Tensorflow
-      - Bayesian (PyMC)
-    categories: 
-      - ml
+  - name: Languages & Frameworks
+    summary: Haskell, Rust, Scala, Go, TypeScript — chosen for their strong type systems, concurrency models, and maintainability under growth.
 
-  - name: Data Engineering
-    summary: |
-      - Data pipelines
-      - Data storage
-      - ETL
-      - Hadoop
-      - Spark
-    categories: 
-      - ml
+  - name: Infrastructure & Operations
+    summary: Kubernetes, Terraform, Docker, AWS, GCP — enable resilient, observable systems and predictable operations at scale.
 
-  - name: Languages
-    #logo: /images/sections/skills/kubernetes.png
-    summary: |
-      - Haskell
-      - Rust
-      - Typescript/Javascript
-      - Java
-      - Scala
-      - Go
-      - Python
-      - Purescript
-      - Elixir
-    categories: 
-      - languages
+  - name: Data & Storage
+    summary: PostgreSQL, Redis, Kafka, S3 — simple, reliable primitives for data consistency and high-throughput workloads.
 
-  - name: PostgreSQL
-    summary: |
-      - Self hosted HA
-      - Query optimizations
-    categories: 
-      - databases
-
-  - name: Neo4j
-    summary: |
-      - Simplified queries
-      - Enabled machine learning/analytical features
-    categories: 
-      - databases
-
-  - name: MySQL
-    summary: |
-      - Self hosted HA
-      - Mariadb
-      - Percona
-      - Multi region & failover
-    categories: 
-      - databases
-
-  - name: Elasticsearch
-    summary: |
-      - Managed multiple clusters
-      - Hot-warm-cold archetecture
-      - Improved indexing for faster queries
-    categories: 
-      - databases
-
-  - name: Oracle Database
-    summary: |
-      - Experienced with nuances in targeting Oracle as data storage for microservices
-      - Strategically deprecate due to cost of licensing
-    categories: 
-      - databases
-
-  - name: MongoDB
-    summary: |
-      - Cloud
-      - Reduced spend by improving service archetecture
-    categories: 
-      - databases
-
-  - name: Kubernetes
-    #logo: /images/sections/skills/kubernetes.png
-    summary: |
-      - Experienced in various CNIs (e.g flannel, cilium, calico)
-      - Multiple production clusters
-      - Home lab nerd
-    categories: 
-      - devops
-
-  - name: Observability & Alerting
-    #logo: /images/sections/skills/kubernetes.png
-    summary: |
-      - Grafana suite
-      - Pager duty
-      - Open telemetry
-    categories: 
-      - devops
-
-  - name: Nix
-    #logo: /images/sections/skills/kubernetes.png
-    summary: |
-      - A reproducible build solves a lot of problems before production
-      - Ensure integrity/security of builds
-    categories: 
-      - devops
-
-
-  - name: Linux
-    #logo: /images/sections/skills/kubernetes.png
-    summary: |
-      - We target linux we should know how it works
-      - Using linux since 2003
-    categories: 
-      - devops
-
-  - name: AWS
-    #logo: /images/sections/skills/kubernetes.png
-    summary: |
-      - AWS management
-      - S3
-      - EKS
-      - ECS
-      - Policies & permissions
-      - etc... 
-    categories: 
-      - cloud
-
-  - name: Cloudflare
-    #logo: /images/sections/skills/kubernetes.png
-    summary: |
-      - DNS
-      - CDN
-    categories: 
-      - cloud
-
+  - name: Practices & Tooling
+    summary: CI/CD, property-based testing, end-to-end validation frameworks — reinforce engineering discipline and deployment confidence.
