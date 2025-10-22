@@ -31,16 +31,16 @@ socialLinks:
 
 badges:
 - type: soft-skill-indicator
-  name: Leader
+  name: Strategic
   percentage: 0
   color: blue
 
 - type: soft-skill-indicator
-  name: Proactive
+  name: Influential
   percentage: 0
   color: blue
 
 - type: soft-skill-indicator
-  name: Capable
+  name: Technical
   percentage: 0
   color: blue
