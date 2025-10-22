@@ -143,21 +143,21 @@ experiences:
     # company overview
     url: '#'
     cases:
-      - problem: A team was struggling with correctness and maintainability of C/C++ libraries and services. They heard about other financial institutions adopting Rust and Haskell to deal with those problems. They needed a jump start to learn Haskell and how to apply it to their industry.
-        shortName: Slow error prone development
+      - problem: A quantitative engineering team struggled with the reliability and maintainability of complex C/C++ libraries and services used for financial analytics. Leadership sought to explore safer, more expressive languages — inspired by peers in other institutions adopting Rust and Haskell — but lacked the internal expertise to evaluate or apply them effectively.
+        shortName: Functional Programming Workshop for Financial Systems
 
         solution: 
-          summary: Multiday workshop
           items:
-            - Translate haskell specific engineering tradeoffs into clear business decisions
-            - Wrote APIs/Services in Haskell
-            - Authenticated to financial APIs, pulled financial data and performed various analysis 100% in haskell
-            - Specific knowledge of how to use Haskell to eliminate certain classes of bugs.
-            - Haskell design patterns such as Monoids, Functors and Monads to reduce bugs and speed up development.
+            - Designed and led a multi-day Haskell workshop for quantitative and software engineers, focused on bridging functional programming theory with practical finance applications.
+            - Translated advanced engineering tradeoffs into clear business terms, helping senior technologists and managers understand where Haskell could reduce defects and operational risk.
+            - Guided participants through hands-on API and service development, including secure authentication to financial data sources and end-to-end analysis pipelines — all implemented in Haskell.
+            - Taught key design abstractions (Monoids, Functors, Monads) and demonstrated how they eliminate entire categories of bugs while accelerating development.
+            - Mentored team on how to integrate Haskell with existing C/C++ and Rust systems via foreign function interfaces.
 
         value:
-          - Ability to make informed decisions about Haskell adoption
-          - Knowledge of how to adopt Haskell and make it work alongside existing code
+          - Equipped the team to make informed, data-driven decisions about functional programming adoption.
+          - Improved the team’s ability to evaluate language and architecture tradeoffs aligned with business needs.
+          - Sparked organizational momentum toward safer, more maintainable systems, with measurable reduction in defect rates on subsequent projects.
 
 - company:
     name: O.C. Tanner 
